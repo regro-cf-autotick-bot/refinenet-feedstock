@@ -1,5 +1,5 @@
 {% set name = "refinenet" %}
-{% set version = "0.9.2" %}
+{% set version = "0.9.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6b320e5f1c781e33520271401eaa3a771366329e475be370213fce2f6216fac9
+  sha256: 5a32d4d73e56dccf1c1129b5c61aa61846ac5163e9b107ee2db360b9b5c77b1e
 
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -43,7 +43,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
-  summary: 'RefineNet is a multi-path refinement network for semantic image segmentation'
+  summary: RefineNet is a multi-path refinement network for semantic image segmentation
   description: |
     RefineNet is a generic multi-path refinement network for high-resolution
     semantic image segmentation and general dense prediction tasks on images.
