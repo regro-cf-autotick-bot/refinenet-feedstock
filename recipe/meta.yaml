@@ -1,5 +1,5 @@
 {% set name = "refinenet" %}
-{% set version = "0.9.3" %}
+{% set version = "0.9.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5a32d4d73e56dccf1c1129b5c61aa61846ac5163e9b107ee2db360b9b5c77b1e
+  sha256: 4263b412f33da74c3e8c6c7f969151aa9e381b46055cb17ba3b646b13c794b9f
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -24,7 +24,7 @@ requirements:
     - pillow
     - pycocotools
     - python >=3.6
-    - pytorch 
+    - pytorch
     - scipy
     - six
     - torchvision
