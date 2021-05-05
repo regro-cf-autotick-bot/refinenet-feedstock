@@ -10,7 +10,7 @@ source:
   sha256: 5a32d4d73e56dccf1c1129b5c61aa61846ac5163e9b107ee2db360b9b5c77b1e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -24,7 +24,7 @@ requirements:
     - pillow
     - pycocotools
     - python >=3.6
-    - pytorch =*=*cuda*
+    - pytorch 
     - scipy
     - six
     - torchvision
