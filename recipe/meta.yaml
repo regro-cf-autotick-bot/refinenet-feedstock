@@ -1,5 +1,5 @@
 {% set name = "refinenet" %}
-{% set version = "0.9.4" %}
+{% set version = "0.9.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4263b412f33da74c3e8c6c7f969151aa9e381b46055cb17ba3b646b13c794b9f
+  sha256: f85e8f1e7dde6f63345b35cb710ae60fa2f54218218ac3b77ede6368949a9fb1
 
 build:
   number: 0
